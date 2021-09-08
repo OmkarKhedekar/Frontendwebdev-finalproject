@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Resort</title>
+</head>
+<body>
+
+<div class="container">
+    <section class="about-header">
+        <nav>
+            <a href="index.html"><img src="images/LOGO2.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="booking.html">BOOKING</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>Booking</h1>
+    </section>
+
+    <!-- Booking -->
+    <section class="registration">
+        <form class="book-form">
+            <div class="form-item">
+                <label for = "Checkin-date">Check In Date:</label>
+                <input type="date" id="checkin-date">
+            </div>
+            <div class="form-item">
+                <label for = "Checkout-date">Check Out Date:</label>
+                <input type="date" id="checkout-date">
+            </div>
+            <div class="form-item">
+                <label for="adult">Adults:</label>
+                <input type="number" min="1" value="1" id="adult">
+            </div>
+            <div class="form-item">
+                <label for="adult">Children:</label>
+                <input type="number" min="1" value="1" id="children">
+            </div>
+            <div class="form-item">
+                <label for="adult">Select Room:</label>
+                <select id="selec-room">
+                    <option>Select type of room</option>
+                    <option>Morden</option>
+                    <option>Cozy</option>
+                    <option>Comfort</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <a href="" class="txtbutton">Submit</a>
+
+            </div>
+
+
+        </form>
+    </section>
+    <section class="bookings">
+        <h1>Places and size avaliable</h1>
+        <p>Here we offer several sizes and choices of hotel rooms which you can pick of your liking :P</p>
+    
+        <div class="row">
+            <div class="booking-column">
+                <h3>Compact</h3>
+                <p>Much ink has been spilt over huge houses and sprawling rooms being the epitome of luxury. However, small bedrooms can be made to feel as cosy or as luxurious as you want them to be. When designed well, small room ideas can lead to functional spaces that serve as a retreat after a long day and leave no room for extra clutter</p>
+            </div>
+            <div class="booking-column">
+                <h3>Morden</h3>
+                <p>Close your eyes for 20 seconds and recall how you felt last time you heard jazz music tickle down your eardrums: now open your eyes and absorb this modern bedroom design. We bet you can hear the jazz even now, because that’s how classic yet fun this modern bedroom design is supposed to be!</p>
+            </div><div class="booking-column">
+                <h3>Cozy</h3>
+                <p>Grey and silver are siblings who complement each other despite the complete absence of contrast and – in our humble opinion – their combo in a colour palette is king. Every shade is grounded, giving this room a slightly warm feel.While dark wood dominates the interior, white and beige complement it , reflecting the artificial warm yellow light under the shelves.</p>
+            </div>
+        </div>
+    
+    
+    </section>
+    
+    <section class="rooms">
+        <h1>Our rooms avaliable</h1>
+        <p>Few of the handpicked rooms avaliable</p>
+        <div class="row">
+        <div class="room-column">
+            <img src="images/smallroom.jpg" alt="Image not loaded">
+            <div class="layer">
+                <h3>COMPACT</h3>
+            </div>
+        </div> <div class="room-column">
+            <img src="images/room1.jpg" alt="Image not loaded">
+            <div class="layer">
+                <h3>Morden</h3>
+            </div>
+        </div> <div class="room-column">
+            <img src="images/room2.jpg" alt="Image not loaded">
+            <div class="layer">
+                <h3>Cozy</h3>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+<!-- footer -->
+
+<section class="footerr">
+    <footer>
+    <div class="footer-content">
+        <h3>
+            Omkar's Resortz
+        </h3>
+        <p>Thanks for visiting our webpage hope you had a banger of a day or party hard at night and make sure to follow us on our social media for discount offers and additional info. </p>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy; 2021 omkar(watchya). designed by <span>Omkar</span></p>
+    </div>
+    </footer>
+</section>
+
+
+
+</div>
+
+
+
+<!-- javascrpit for responsive -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0px";
+        
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+  
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Resort</title>
+</head>
+<body>
+
+<div class="container">
+    <section class="about-header">
+        <nav>
+            <a href="index.html"><img src="images/LOGO2.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="booking.html">BOOKING</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- contact -->
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div class="contact-detail">
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Royal Road, Omkar's Resortz.</h5>
+                        <p>Western Mumbai, India.</p>
+                    </span>
+                </div>
+                <div class="contact-detail">
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 0123456789</h5>
+                        <p>Call lines open throughout the day.</p>
+                    </span>
+                </div>
+                <div class="contact-detail">
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>watchya101@gmail.com</h5>
+                        <p>Email on this main for additional info.</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter email address" required>
+                    <input type="text" placeholder="Message" required>
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="txtbutton">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- footer -->
+
+<section class="footerr">
+    <footer>
+    <div class="footer-content">
+        <h3>
+            Omkar's Resortz
+        </h3>
+        <p>Thanks for visiting our webpage hope you had a banger of a day or party hard at night and make sure to follow us on our social media for discount offers and additional info. </p>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy; 2021 omkar(watchya). designed by <span>Omkar</span></p>
+    </div>
+    </footer>
+</section>
+
+
+
+</div>
+
+
+
+<!-- javascrpit for responsive -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0px";
+        
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
